@@ -1,0 +1,29 @@
+#gallery{
+  width: 90%;
+}
+
+.photo{
+  position: relative;
+  height: 80%;
+  left: 0;
+}
+
+.photo *{
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  left: 0;
+  transition: opacity 1s;
+}
+
+.photo > .shown{
+  opacity: 1;
+}
+
+.tabs{
+  position: sticky;
+  text-align: center;
+  padding-bottom: 20px;
+  top: 100%;
+  left: 46%;
+}
